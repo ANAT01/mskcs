@@ -1,0 +1,8 @@
+tmp/
+venv/
+.idea/
+data/data_notfinished
+data/jsons
+docs/index2.html
+docs/index3.html
+html/js/data.js
