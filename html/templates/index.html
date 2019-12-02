@@ -19,12 +19,10 @@
         <script src="../html/js/bootstrap.min.js"></script>
     {% else %}
         <script>
-        {% include '../js/jquery-3.4.1.min.js' %}
-        {% include '../js/bootstrap.min.js' %}
+        {{JSLIBS}}
         </script>
         <style>
-        {% include '../css/bootstrap.min.css' %}
-        {% include '../custom.css' %}
+        {{CSS}}
         </style>
     {% endif %}
 </head>
@@ -80,8 +78,8 @@
 {% else %}
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-      {% include '../../tmp/data.js' %}
-      {% include '../js/app.js' %}
+      {{JSDATA}}
+      {{JSAPP}}
     });
 </script>
 {% endif %}
