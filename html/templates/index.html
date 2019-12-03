@@ -20,6 +20,8 @@
     {% else %}
         <script>
         {{JSLIBS}}
+        {{ALLCS}}
+        {{ALLZONE}}
         </script>
         <style>
         {{CSS}}
@@ -79,7 +81,7 @@
 {% else %}
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-      {{JSDATA}}
+      {#{JSDATA}#}
       {{JSAPP}}
     });
 </script>
